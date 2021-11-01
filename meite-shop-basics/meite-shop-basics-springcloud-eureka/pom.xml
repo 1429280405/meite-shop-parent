@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.mayikt</groupId>
         <artifactId>meite-shop-basics</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.1-RELEASE</version>
     </parent>
     <artifactId>meite-shop-basics-springcloud-eureka</artifactId>
 

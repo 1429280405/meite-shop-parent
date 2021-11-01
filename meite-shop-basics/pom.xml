@@ -3,11 +3,14 @@
     <parent>
         <groupId>com.mayikt</groupId>
         <artifactId>meite-shop-parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.1-RELEASE</version>
     </parent>
     <artifactId>meite-shop-basics</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>meite-shop-basics-springcloud-eureka</module>
+        <module>meite-shop-basics-springcloud-zuul</module>
+        <module>meite-shop-basics-xxl-sso-server</module>
+        <module>meite-shop-basics-elk-kafka</module>
     </modules>
 </project>

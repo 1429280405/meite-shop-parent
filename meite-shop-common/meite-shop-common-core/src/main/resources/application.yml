@@ -1,0 +1,9 @@
+spring:
+  redis:
+    host: 192.168.2.246
+    port: 6379
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/meite_member?useUnicode=true&characterEncoding=utf8
+    username: root

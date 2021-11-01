@@ -1,12 +1,56 @@
-###服务启动端口号
-server:
-  port: 8200
-###服务名称(服务注册到eureka名称)
-spring:
-  application:
-    name: app-mayikt-weixin
-###服务注册到eureka地址
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8100/eureka
+server:
+  port: 8200
+spring:
+  application:
+    name: app-mayikt-weixin
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+    redis:
+      host: 192.168.2.246
+      port: 6379
+swagger:
+  base-package: com.mayikt.weixin.service
+  contact:
+    email: 1429280405@qq.com
+    name: 97后互联网架构师-刘劲强
+  description: 该项目“基于SpringCloud2.x构建微服务电商项目。
+  terms-of-service-url: www.mayikt.com
+  title: SpringCloud2.x构建微服务电商项目-微信服务接口
+  version: 1.1
+
+
+
+logging:
+  level:
+    com:
+      github:
+        binarywang:
+          demo:
+            wx:
+              mp: DEBUG
+    me:
+      chanjar:
+        weixin: DEBUG
+    org:
+      springframework:
+        web: INFO
+mayikt:
+  weixin:
+    default:
+      registration:
+        code:
+          message: 您的消息，我们已经收到,会及时回复给您的!
+    registration:
+      code:
+        message: 欢迎您关注我的公众号，您的注册码为:%s。
+
+wx:
+  mp:
+    configs:
+      - appId: wx3194e8ef56908c1e
+        secret: 6025644c607655f4e7cd40414cef0ef9
+        token: mayikt

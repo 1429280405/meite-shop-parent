@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.mayikt</groupId>
     <artifactId>meite-shop-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1-RELEASE</version>
     <packaging>pom</packaging>
     <modules>
         <module>meite-shop-basics</module>
@@ -11,6 +11,9 @@
         <module>meite-shop-service-impl</module>
         <module>meite-shop-common</module>
         <module>meite-shop-portal</module>
+<!--        <module>meite-shop-api-entity</module>-->
+        <module>meite-shop-api-dto</module>
+        <module>meite-shop-pay-plugin</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

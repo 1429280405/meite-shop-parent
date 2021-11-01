@@ -1,12 +1,23 @@
-###服务启动端口号
-server:
-  port: 8300
-###服务名称(服务注册到eureka名称)
-spring:
-  application:
-    name: app-mayikt-member
-###服务注册到eureka地址
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8100/eureka
+server:
+  port: 8300
+spring:
+  application:
+    name: app-mayikt-member
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/meite_member?useUnicode=true&characterEncoding=utf8
+    username: root
+swagger:
+  base-package: com.mayikt.member.service
+  contact:
+    email: 1429280405@qq.com
+    name: 97后互联网架构师-刘劲强
+  description: 该项目“基于SpringCloud2.x构建微服务电商项目。
+  terms-of-service-url: www.mayikt.com
+  title: SpringCloud2.x构建微服务电商项目-微信服务接口
+  version: 1.1
